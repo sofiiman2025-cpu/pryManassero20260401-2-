@@ -16,5 +16,15 @@ namespace pryManassero20260401_2_
         {
             InitializeComponent();
         }
+
+        private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

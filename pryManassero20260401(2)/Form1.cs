@@ -47,13 +47,29 @@ namespace pryManassero20260401_2_
 
 
             //pasar los datos a variable y luego mostrarlos
-            varCategoria = 
+            varCodigo = txtCodigo.Text;
+            varNombre = txtNombre.Text;
+            varDescripcion = txtDescripción.Text;
+            //usando .net para convertir
+            varStock = Convert.ToInt16(txtStock.Text);
+            //usando el tipo de dato para parsear
+            varPrecio = int.Parse(txtPrecio.Text);
+            varCategoria = cmbCategoría.Text;
+
+            lblRegistroVariables.Text = varCodigo + " " + varNombre + " " + varPrecio + " " + varStock + " " + varDescripcion + " " + varCategoria;
+
+
 
         }
 
         private void lblRegistroIG_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void lblRegistroVariables_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

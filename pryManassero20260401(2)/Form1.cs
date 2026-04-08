@@ -18,16 +18,26 @@ namespace pryManassero20260401_2_
         }
 
         //DECLARACION DE VARIABLES GLOBALES
-        string varCodigo = "";
-        string varNombre = "";
-        int varStock = 0;
-        int varPrecio = 0;
-        string varCategoria = "";
-        string varDescripcion = "";
+        string varCodigo;
+        string varNombre;
+        int varStock;
+        int varPrecio;
+        string varCategoria;
+        string varDescripcion;
 
         private void lblPrecio_Click(object sender, EventArgs e)
         {
-           
+            //inicar las variables
+            varCodigo = "";
+            varNombre = "";
+            varStock = 0;
+            varPrecio = 0;
+            varCategoria = "";
+            varDescripcion = "";
+
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -42,24 +52,61 @@ namespace pryManassero20260401_2_
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            lblRegistroIG.Text = txtCodigo.Text + '/' + txtNombre.Text + '/'
-                + txtStock.Text + '/' + txtPrecio.Text + '/' + cmbCategoría.Text + '/' + txtDescripción.Text;
+            if (txtCodigo.Text == "")
+            {
+                MessageBox.Show("Complete el código");
+                txtCodigo.Focus();
+            }
+            else
+            {
+                if (txtNombre.Text == "")
+                {
+                    MessageBox.Show("Complete el nombre");
+                    txtNombre.Focus();
+                }
+                else
+                {
+                    if (txtPrecio.Text == "")
+                    {
+                        MessageBox.Show("Complete el precio");
+                        txtPrecio.Focus();
+                    }
+                    else
+                    {
 
+                    }
+                    if (cmbCategoría.Text == "")
+                    {
+                        MessageBox.Show("Complete la categoría");
+                        cmbCategoría.Focus();
+                    }
+                    else
+                    {
 
-            //pasar los datos a variable y luego mostrarlos
-            varCodigo = txtCodigo.Text;
-            varNombre = txtNombre.Text;
-            varDescripcion = txtDescripción.Text;
-            //usando .net para convertir
-            varStock = Convert.ToInt16(txtStock.Text);
-            //usando el tipo de dato para parsear
-            varPrecio = int.Parse(txtPrecio.Text);
-            varCategoria = cmbCategoría.Text;
+                    }
+                    if (txtDescripción.Text == "")
+                    {
+                        MessageBox.Show("Complete el descripción");
+                        txtDescripción.Focus();
+                    }
+                    else
+                    {
 
-            lblRegistroVariables.Text = varCodigo + " " + varNombre + " " + varPrecio + " " + varStock + " " + varDescripcion + " " + varCategoria;
+                        if (txtStock.Text == "")
+                        {
+                            MessageBox.Show("Complete el Stock");
+                            txtStock.Focus();
+                        }
+                        else
+                        {
+                            lblRegistroIG.Text = txtCodigo.Text + '/' + txtNombre.Text + '/'
+                            + txtStock.Text + '/' + txtPrecio.Text + '/' + cmbCategoría.Text + '/' + txtDescripción.Text;
 
-
-
+                            MessageBox.Show("Producto registrado con éxito");
+                        }
+                    }
+                }
+            }
         }
 
         private void lblRegistroIG_Click(object sender, EventArgs e)

@@ -49,69 +49,52 @@ namespace pryManassero20260401_2_
         {
 
         }
-
+        
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (txtCodigo.Text == "")
             {
-                MessageBox.Show("Complete el código",
-                    "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Complete el código", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCodigo.Focus();
+            }
+            else if (txtNombre.Text == "")
+            {
+                MessageBox.Show("Complete el nombre", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+            }
+            else if (txtPrecio.Text == "")
+            {
+                MessageBox.Show("Complete el precio", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPrecio.Focus();
+            }
+            else if (cmbCategoría.Text == "")
+            {
+                MessageBox.Show("Complete la categoría", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cmbCategoría.Focus();
+            }
+            else if (txtDescripción.Text == "")
+            {
+                MessageBox.Show("Complete la descripción", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDescripción.Focus();
+            }
+            else if (txtStock.Text == "")
+            {
+                MessageBox.Show("Complete el stock", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtStock.Focus();
             }
             else
             {
-                if (txtNombre.Text == "")
-                {
-                    MessageBox.Show("Complete el nombre","Advertencia",
-                        MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    txtNombre.Focus();
-                }
-                else
-                {
-                    if (txtPrecio.Text == "")
-                    {
-                        MessageBox.Show("Complete el precio","Advertencia",
-                            MessageBoxButtons.OK,MessageBoxIcon.Error);
-                        txtPrecio.Focus();
-                    }
-                    else
-                    {
+                lblRegistroIG.Text = txtCodigo.Text + "/" + txtNombre.Text + "/" +
+                                     txtStock.Text + "/" + txtPrecio.Text + "/" +
+                                     cmbCategoría.Text + "/" + txtDescripción.Text;
 
-                    }
-                    if (cmbCategoría.Text == "")
-                    {
-                        MessageBox.Show("Complete la categoría",
-                            "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        cmbCategoría.Focus();
-                    }
-                    else
-                    {
-
-                    }
-                    if (txtDescripción.Text == "")
-                    {
-                        MessageBox.Show("Complete el descripción",
-                            "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtDescripción.Focus();
-                    }
-                    else
-                    {
-
-                        if (txtStock.Text == "")
-                        {
-                            MessageBox.Show("Complete el Stock",
-                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            txtStock.Focus();
-                        }
-                        else
-                        {
-                            lblRegistroIG.Text = txtCodigo.Text + '/' + txtNombre.Text + '/'
-                            + txtStock.Text + '/' + txtPrecio.Text + '/' + cmbCategoría.Text + '/' + txtDescripción.Text;
-
-                            MessageBox.Show("Producto registrado con éxito");
-                        }
-                    }
-                }
+                MessageBox.Show("Producto registrado con éxito");
             }
         }
 

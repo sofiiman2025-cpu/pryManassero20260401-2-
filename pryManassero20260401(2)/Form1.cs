@@ -54,21 +54,24 @@ namespace pryManassero20260401_2_
         {
             if (txtCodigo.Text == "")
             {
-                MessageBox.Show("Complete el código");
+                MessageBox.Show("Complete el código",
+                    "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCodigo.Focus();
             }
             else
             {
                 if (txtNombre.Text == "")
                 {
-                    MessageBox.Show("Complete el nombre","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Complete el nombre","Advertencia",
+                        MessageBoxButtons.OK,MessageBoxIcon.Error);
                     txtNombre.Focus();
                 }
                 else
                 {
                     if (txtPrecio.Text == "")
                     {
-                        MessageBox.Show("Complete el precio","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        MessageBox.Show("Complete el precio","Advertencia",
+                            MessageBoxButtons.OK,MessageBoxIcon.Error);
                         txtPrecio.Focus();
                     }
                     else

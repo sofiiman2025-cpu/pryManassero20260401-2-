@@ -61,14 +61,14 @@ namespace pryManassero20260401_2_
             {
                 if (txtNombre.Text == "")
                 {
-                    MessageBox.Show("Complete el nombre");
+                    MessageBox.Show("Complete el nombre","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     txtNombre.Focus();
                 }
                 else
                 {
                     if (txtPrecio.Text == "")
                     {
-                        MessageBox.Show("Complete el precio");
+                        MessageBox.Show("Complete el precio","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
                         txtPrecio.Focus();
                     }
                     else
@@ -77,7 +77,8 @@ namespace pryManassero20260401_2_
                     }
                     if (cmbCategoría.Text == "")
                     {
-                        MessageBox.Show("Complete la categoría");
+                        MessageBox.Show("Complete la categoría",
+                            "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         cmbCategoría.Focus();
                     }
                     else
@@ -86,7 +87,8 @@ namespace pryManassero20260401_2_
                     }
                     if (txtDescripción.Text == "")
                     {
-                        MessageBox.Show("Complete el descripción");
+                        MessageBox.Show("Complete el descripción",
+                            "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         txtDescripción.Focus();
                     }
                     else
@@ -94,7 +96,8 @@ namespace pryManassero20260401_2_
 
                         if (txtStock.Text == "")
                         {
-                            MessageBox.Show("Complete el Stock");
+                            MessageBox.Show("Complete el Stock",
+                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             txtStock.Focus();
                         }
                         else

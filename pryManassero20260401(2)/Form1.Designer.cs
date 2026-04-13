@@ -109,7 +109,7 @@
             // 
             this.txtCodigo.BackColor = System.Drawing.Color.NavajoWhite;
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(118, 76);
+            this.txtCodigo.Location = new System.Drawing.Point(134, 76);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 23);
             this.txtCodigo.TabIndex = 0;
@@ -118,7 +118,7 @@
             // 
             this.txtNombre.BackColor = System.Drawing.Color.NavajoWhite;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(118, 116);
+            this.txtNombre.Location = new System.Drawing.Point(134, 116);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 23);
             this.txtNombre.TabIndex = 1;
@@ -155,7 +155,7 @@
             "Remera",
             "Pantalon ",
             "Buzo"});
-            this.cmbCategoría.Location = new System.Drawing.Point(118, 230);
+            this.cmbCategoría.Location = new System.Drawing.Point(134, 228);
             this.cmbCategoría.Name = "cmbCategoría";
             this.cmbCategoría.Size = new System.Drawing.Size(100, 25);
             this.cmbCategoría.TabIndex = 4;
@@ -164,7 +164,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(24, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(22, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(212, 28);
             this.lblTitulo.TabIndex = 16;
@@ -176,7 +176,7 @@
             this.lblDatos.BackColor = System.Drawing.Color.NavajoWhite;
             this.lblDatos.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatos.ForeColor = System.Drawing.Color.Black;
-            this.lblDatos.Location = new System.Drawing.Point(26, 48);
+            this.lblDatos.Location = new System.Drawing.Point(27, 48);
             this.lblDatos.Name = "lblDatos";
             this.lblDatos.Size = new System.Drawing.Size(111, 16);
             this.lblDatos.TabIndex = 17;
@@ -185,7 +185,7 @@
             // txtPrecio
             // 
             this.txtPrecio.BackColor = System.Drawing.Color.NavajoWhite;
-            this.txtPrecio.Location = new System.Drawing.Point(118, 193);
+            this.txtPrecio.Location = new System.Drawing.Point(134, 193);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 3;
@@ -193,7 +193,7 @@
             // txtStock
             // 
             this.txtStock.BackColor = System.Drawing.Color.NavajoWhite;
-            this.txtStock.Location = new System.Drawing.Point(118, 156);
+            this.txtStock.Location = new System.Drawing.Point(134, 156);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(100, 20);
             this.txtStock.TabIndex = 2;
@@ -245,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(407, 493);
+            this.ClientSize = new System.Drawing.Size(328, 472);
             this.Controls.Add(this.lblRegistroVariables);
             this.Controls.Add(this.lblRegistroIG);
             this.Controls.Add(this.btnCancelar);
